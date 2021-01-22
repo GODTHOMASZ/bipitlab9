@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Сlient";
+}
+
+<h2>Клиенты</h2>
+<div>
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>ФИО</td>
+        </tr>
+        @foreach (var s in ViewBag.Сlient)
+        {
+            <tr>
+                <td>@s.Id</td>
+                <td>@s.FIO</td>
+            </tr>
+        }
+    </table>
+</div>
+
